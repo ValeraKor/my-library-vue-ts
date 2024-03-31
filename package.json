@@ -1,29 +1,29 @@
 {
-  "name": "my-library-vue-ts",
+  "name": "my-vue",
   "private": false,
   "version": "0.0.15",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/my-library-vue-ts.umd.js",
-  "module": "./dist/my-library-vue-ts.es.js",
+  "main": "./dist/my-vue.umd.js",
+  "module": "./dist/my-vue.es.js",
   "exports": {
     ".": {
-      "import": "./dist/my-library-vue-ts.es.js",
-      "require": "./dist/my-library-vue-ts.umd.js"
+      "import": "./dist/my-vue.es.js",
+      "require": "./dist/my-vue.umd.js"
     },
-    "./dist/my-library-vue-ts.css": {
-      "import": "./dist/my-library-vue-ts.css",
-      "require": "./dist/my-library-vue-ts.css"
+    "./dist/my-vue.css": {
+      "import": "./dist/my-vue.css",
+      "require": "./dist/my-vue.css"
     },
-    "./dist/my-library-vue-ts.min.css": {
-      "import": "./dist/my-library-vue-ts.min.css",
-      "require": "./dist/my-library-vue-ts.min.css"
+    "./dist/my-vue.min.css": {
+      "import": "./dist/my-vue.min.css",
+      "require": "./dist/my-vue.min.css"
     },
-    "./dist/my-library-vue-ts.scss": {
-      "import": "./dist/my-library-vue-ts.scss",
-      "require": "./dist/my-library-vue-ts.scss"
+    "./dist/my-vue.scss": {
+      "import": "./dist/my-vue.scss",
+      "require": "./dist/my-vue.scss"
     }
   },
   "types": "./dist/main.d.ts",
@@ -50,5 +50,8 @@
     "vite-plugin-sass-dts": "^1.2.7",
     "vite-plugin-static-copy": "^0.13.0",
     "vue-tsc": "^1.0.11"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
+  "author": "",
+  "license": "ISC"
 }

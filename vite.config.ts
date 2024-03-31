@@ -19,7 +19,7 @@ export default defineConfig({
     cssInjectedByJsPlugin(),
     viteStaticCopy({
       targets: [
-        { src: "src/assets/my-library-vue-ts.scss", dest: "dist/assets" },
+        { src: "src/assets/my-vue.scss", dest: "dist/assets" },
         { src: "src/assets/scss", dest: "dist/assets" },
       ],
     }),
@@ -44,7 +44,7 @@ export default defineConfig({
       entry: "src/components/index.ts",
       name: "myLibraryVueTs",
       formats: ["es", "cjs", "umd"],
-      fileName: (format) => `my-library-vue-ts.${format}.js`,
+      fileName: (format) => `my-vue.${format}.js`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -55,7 +55,7 @@ export default defineConfig({
       external: ["vue"],
       output: {
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === "main.css") return "my-library-vue-ts.min.css";
+          if (assetInfo.name === "main.css") return "my-vue.min.css";
           return assetInfo.name;
         },
         exports: "named",
